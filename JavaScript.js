@@ -10,7 +10,7 @@ function showTip() {
     let rand = Math.Floor(Math.random()*tips.length);
     document.getElementById("tipResult").innerHTML = tips[rand];
     }
-}
+
 
 let travelerName = "";
 let trailNotes = "";
