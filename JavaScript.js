@@ -1,5 +1,3 @@
-let tipIndex = 0;
-
 let tips = [
     "צאו להליכה של 20 דקות בלי אוזניות ובלי גלילה בטלפון.",
     "קחו בקבוק מים ושבו כמה דקות במקום ירוק ורגוע.",
@@ -9,12 +7,8 @@ let tips = [
 ];
 
 function showTip() {
-    document.getElementById("tipResult").innerHTML = tips[tipIndex];
-
-    tipIndex = tipIndex + 1;
-
-    if (tipIndex == tips.length) {
-        tipIndex = 0;
+    let rand = Math.Floor(Math.random()*tips.length)
+    document.getElementById("tipResult").innerHTML = tips[rand];
     }
 }
 
