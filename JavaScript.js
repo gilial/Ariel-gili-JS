@@ -7,7 +7,7 @@ let tips = [
 ];
 
 function showTip() {
-    let rand = Math.Floor(Math.random()*tips.length)
+    let rand = Math.Floor(Math.random()*tips.length);
     document.getElementById("tipResult").innerHTML = tips[rand];
     }
 }
